@@ -83,5 +83,3 @@
 // }
 // console.log(calculate(3));
 
-
-////////////LESSON-03 OBJECTLAR /////////////////////
