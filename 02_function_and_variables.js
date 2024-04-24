@@ -1,8 +1,10 @@
 ////////////LESSON-02 FUNCTION VA VARIABLES /////////////////////
 //js variables 3, web, nodejs, mobile application. 
 
-
+//function= malum bir vazifa bajarishga asoslangan code block.
 //Function (it consists of 2 things) => Define & Call
+
+// mostly use const not let. 
 
 // // Define
 // function greeting() {
