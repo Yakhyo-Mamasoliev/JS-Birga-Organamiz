@@ -1,56 +1,54 @@
 
-/*PROGRAMMING PARADIGMS: 
+/*PROGRAMMING PARADIGMS: -is a relatively high-level way to structure and conceptualize the implementation of a computer program
  Most famous are: Functional Programming & OOP
- 
  OOP BIG 4 CONCEPTS: ABSTRACTION, ENCAPULATIONS, INHERETENCE, POLYMORPHISM
- 
  Today we will see only Abstraction
-
-*/ 
+*/  
+//object-propertylarga ega bo`lgan data type
+//mostly two ways of of creating: literal and constructor
 //Object via build via literal medthod
-/*
-const person = {
-  //properties
-  name: 'David',
-  age: 22,
-  country: 'English',
-};
 
-//key: name, age, 
-//value: "David", 22
+// const person = {
+//   //state properties
+//   name: 'David',
+//   age: 22,
+//   country: 'English',
+// };
 
-//CAll
-//1way 
-console.log('name of the person: ', person.name);
+// //key: name, age, 
+// //value: "David", 22
 
-//2way, creating varibale
-const a = person.name;
-console.log("name of the person is: ", a);
+// //CAll
+// //1way 
+// console.log('name of the person: ', person.name);
+
+// //2way, creating varibale
+// const a = person.name;
+// console.log("name of the person is: ", a);
 
 
-//We can use function inside the object it is called method
-        const person = {
-          //properties
-          name: 'David',
-          age: 22,
-          country: 'English',
-          //using method
-          greet() {
-            console.log('Whassup: This is method: ');
-          },
-          introduce() {
-            console.log(`I am ${this.name} and my age is ${this.age} years old`);
-          }
-        };
+// //We can use function inside the object it is called method
+//         const person = {
+//           //properties
+//           name: 'David',
+//           age: 22,
+//           country: 'English',
+//           //using method
+//           greet() {
+//             console.log('Whassup: This is method: ');
+//           },
+//           introduce() {
+//             console.log(`I am ${this.name} and my age is ${this.age} years old`);
+//           }
+//         };
 
-        const a = person.name;
-        console.log("name of the person is: ", a);
+//         const a = person.name;
+//         console.log("name of the person is: ", a);
 
-        person.greet();
-        person.introduce();
+//         person.greet();
+//         person.introduce();
 
-      */
-
+   
 // const pressButton = document.getElementById("butt");
 
 // console.log('presentation: ', pressButton);
@@ -58,6 +56,7 @@ console.log("name of the person is: ", a);
 // pressButton.addEventListener('click', function(){
 //   alert('You pressed this button!');
 // });
+
 
 // tips
 // use the correct syntax for the console.log() statement with template literals is: ` which is backstick
@@ -82,26 +81,26 @@ console.log("name of the person is: ", a);
 // console.log(person2.name); 
 
 
-// //spread operator
-// //if you want to make new object with the same parameters with the new reference you need spread operator
+// // spread operator
+// // if you want to make new object with the same parameters with the new reference you need spread operator
 // const person3 = {...person};
 // person2.name = "David";
 // console.log("Person 3: ", person2.name)
 
 
 
-//OBJECT BUILD VIA CONSTRUCTOR
-const ob = new Object();
-ob.name = "David";
-ob.hobby = "Reading";
+// //OBJECT BUILD VIA CONSTRUCTOR
+// const ob = new Object();
+// ob.name = "David";
+// ob.hobby = "Reading";
 
-console.log("My hobby is:",ob.hobby);
-console.log(`My hobby is: ${ob.hobby}`);
+// console.log("My hobby is:",ob.hobby);
+// console.log(`My hobby is: ${ob.hobby}`);
 
-//what keys an object has
-let keys = Object.keys(ob);
-console.log("Object keys", keys);
+// //what keys an object has
+// let keys = Object.keys(ob);
+// console.log("Object keys", keys);
 
-//what keys an object has
-let values = Object.values(ob);
-console.log("Object keys", values);
+// //what keys an object has
+// let values = Object.values(ob);
+// console.log("Object keys", values);
