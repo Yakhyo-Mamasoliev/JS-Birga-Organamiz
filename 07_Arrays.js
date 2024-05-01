@@ -1,14 +1,14 @@
-// //To run the code, uncommand each part first. Total  parts.
+// //To run the code, uncommand each part first. Total 3 parts.
 
-// Array va uning xususiyatlari
-// Arraylarda index va value tushunchasi
-// Arraylaring state propertilari
-// Arraydago odatiy metodlar
+// // Array va uning xususiyatlari
+// // Arraylarda index va value tushunchasi
+// // Arraylaring state propertilari
+// // Arraydago odatiy metodlar
 
 
 // // PART 1 Array va uning xususiyatlari
 // // Array - o`zining ichki tartibiga ega bo`lgan maxsus object.
-// // hosil qilihsiga ko`ra 2 xil, literal & constructor
+// // hosil qilinsiga ko`ra 2 xil, literal & constructor
 
 // //literal usuli
 // const list = [1, 2, 3, 7, 5];
@@ -25,6 +25,7 @@
  
 //  // Value: 'apple', 'melon', 'cherry', 'banana'
 //  // index: 0, 1, 2, 3
+//  // JavaScript arrays don't support negative indexes.
 
 //  const fruit = fruits[0];
 //  console.log('fruit:', fruit);
@@ -41,8 +42,8 @@
 // console.log(`keyin: `, mevalar);
 
 
-// // // PART 3 Property & Methods(Regular-common) 
-// // Property: length;
+// // // PART 3 Property(only 1, length) & Methods(many, Regular-common) 
+// // Property: length; 
 // const mevalar = ['apple', 'melon', 'cherry'];
 // const size = mevalar.length;
 // console.log(size);
@@ -58,6 +59,11 @@
 // const list2 = [5, 3, 6, 1, 7, 0];
 // list2.sort(); // sorts number, cons: it sorts based on first digit. Eg: it puts 21 before 3
 // list2.reverse(); // reverse the list
+// console.log(list2);
+
+// // if array has string, num, boolean, it sorts with num, string. (boolean is also considered as string)
+// const list2 = [5, 3, true, "banana", 'zed', 'cherry', 6, 1, 7, 0];
+// list2.sort(); // sorts number, cons: it sorts based on first digit. Eg: it puts 21 before 3
 // console.log(list2);
 
 
@@ -80,11 +86,17 @@
 
 // // splice(), => mutable
 // mevalar.splice(1, 2); // delets y elements starting from x-index
+// mevalar.splice(1, 0, "MIT"); // adds "MIT" to the index-1
+// mevalar.splice(1, 1, "MIT"); // adds "MIT" to the index-1, also deletes 2nd index
 // console.log(mevalar);
 
-//concat(); => immutable
-const mevalar = ['apple', 'melon', 'cherry', 'watermelon', 'banana'];
-const numbers = [1, 4, 7, 9];
-const newList = mevalar.concat(numbers);
-console.log(mevalar);
-console.log(newList);
+
+
+// //concat(); => immutable
+// const mevalar = ['apple', 'melon', 'cherry', 'watermelon', 'banana'];
+// const numbers = [1, 4, 7, 9];
+// const newList = mevalar.concat(numbers); // joins two or more arrays
+// console.log(mevalar);
+// console.log(newList);
+
+
