@@ -14,26 +14,29 @@
 // //  => 
 // //  &&    a > b && b < 0
 // //  ||    a > b || b < 0
+// //  ++item this is not recommended
 
 // // !!
 // // truthy: true, 5, "hello" ...           => true
 // // falsy: false, null, 0, '', undefined   => false
 // // !!a => returns true
 
-// // ! (not operator)
-// // !!a => returns false
+// // ! (not operator) truthyni false qiladi
+// // !!a => falsyni false, truthyni true chiqaradi
 
 
 
 // // Ternary Operator
 // // varibaleni qiymatini biz qo`ygan conditiondan kelib chiqib qo`yadi 
+// // bu faqat qisqa operatsiyalar uchun, murakkablashtirma
 // const b = 5; 
 // const a = b > 0 ? 'positive' : 'negative';
 // console.log(a);
 
 
 // // Nullish Operator
-// // nullmi nullmasmi shuni aniqlab beradi/
+// // nullmi nullmasmi shuni aniqlab beradi
+// // null or undefined ni tekshiradi xolos. falsy truthy larni emas
 // const a = 5; 
 // // const a = null;
 // const b = a ?? 100; // note: ??
@@ -51,7 +54,9 @@
 //   console.log('Your apple is less than 50:');
 // };
 
+
 // // efficient scripting
+
 // // in else if statements, start with backward, meaning start with the last condition
 // if(apple >= 100) {
 //   console.log('Your apple is not less than 100:');
@@ -64,6 +69,8 @@
 
 
 // // SWITCH
+// // If you have a single expression and multiple possible values to check against, a switch statement might be more suitable and cleaner.
+// // If you have complex conditions involving multiple expressions or conditions that cannot be easily expressed using a single expression, if-else statements might be more appropriate.
 // const grade = 'A';
 
 // switch(grade) {

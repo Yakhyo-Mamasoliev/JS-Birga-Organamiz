@@ -1,4 +1,6 @@
 // //To run the code, uncommand each code
+// // 08 Arraylarning Iteration metodlari
+
 
 // // Iteration asosiy methods: forEach, map and filter => immutable
 // // Iteration yordamchi methods: reduce, some, every
@@ -50,16 +52,19 @@
 //   console.log(`${curIndex}: ${curValue}`);
 //   console.log('total: ', total);
 //   return total + curValue;
-// }, 100); // 0 yozilmasa 1-indeksdan boshlab hisoblaydi
+// }, 100); // 0 yozildi nima yozilmadi nima farqi yo`q. it is initial data whihc we want to set
 // console.log('result:', result);
 
 
-// some
-// arrayni malum valuelarishart qo`yib bittasini bajarsa ham natija beradi, bitta sharti ham topilmasa false natija beradi
-const numbers = [2, 4, 7, 9];
+// // some & every
+// // arrayni malum valuelariga shart qo`yib bittasini bajarsa ham true beradi, bitta sharti ham topilmasa false beradi
+// // everyda har bir element shartni bajarishi kerak
+// const numbers = [2, 4, 7, 9];
 
-const result = numbers.some((ele, index) => {
-  console.log(`${index}: ${ele}`);
-  return ele === 1;
-});
-console.log('result:', result);
+// const result = numbers.some((ele, index) => {
+//   console.log(`${index}: ${ele}`);
+//   return ele === 1;
+// });
+// console.log('result:', result);
+
+

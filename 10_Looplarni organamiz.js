@@ -1,4 +1,4 @@
-// // while and loops
+// // while and  for loops
 
 
 // // while => when we do not know number of iterations (when user enters valid username till proper one)
@@ -8,7 +8,7 @@
 //   count += 1;
 // }
 
-
+// // uchburchak qonuni ishlaydi yani birinchi o`rta, chap, o`ng ishlaydi. 
 // // for => when we know number of iterations (items in basket of array)
 // for (let i = 0; i <= 10; i++) {
 //   console.log('executed:', i);
@@ -35,3 +35,5 @@
 // for(const index in fruits) {
 //   console.log(index);
 // }
+
+// objectda faqat keyni olish mumkin, valueni olib bo`lmaydi

@@ -28,12 +28,26 @@ form.addEventListener('submit', (event) => {
 });
 
 function createPurchase(item) {
-  const newHTML = `<li style="margin: 10px">${item}<button onclick="deletePurchase(this)">delete</button></li>`;
+  const newHTML = `<li style="margin: 10px">${item}<button onclick="deletePurchase(this)">delete</button></li>`; // this here is (deletePurchase(this)) is button. 
   list.insertAdjacentHTML('beforeend', newHTML); // puts intered item to the end of the list
 };
+
+// item in above code is button
 
 function deletePurchase(ele) {
   console.log(ele.parentElement);
   ele.parentElement.remove();
 }
 
+// update qilganda stored itemlar o`chib ketmasligi uchun quyidagi xotiralar mavjud
+// Local Storage, Session Storage, Cookies, Cache
+// Element yonidagi Application qismida topish mumkin
+// Biz itemlarni shu xotiralarga yozsak ham, saqlanadi ammo faqat bizni komputerizmida saqlanadi. Hammada emas.
+// Har qanday devicedan kiritilgan itemni saqlash uchun bizga backend kerak
+
+
+// // Gorizontal Bilim - front, back, database
+// // Horizontal Bilim - others: Security, Devops, and others
+
+// // Front End => Back End => Database
+// // Database => Back End => Front End
