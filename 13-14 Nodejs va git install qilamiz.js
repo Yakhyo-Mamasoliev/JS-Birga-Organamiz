@@ -6,7 +6,7 @@
 
 // 2. 
 // JSON data type yordamida browserga yuboramiz
-// Tog`rirog`i Reactga yuboramiz, React o`zi undan html qurib oladi
+// Tog`rirog`i Reactga yuboramiz. React o`zi undan html qurib oladi
 
 
 
