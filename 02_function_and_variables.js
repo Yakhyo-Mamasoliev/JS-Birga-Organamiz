@@ -6,12 +6,12 @@
 
 // mostly use const not let. 
 
-// // Define
-// function greeting() {
-//   console.log("Hello World");
-// }
-// //Call
-// greeting();
+// Define
+function greeting() {
+  console.log("Hello World");
+}
+//Call
+greeting();
 
 //Function Criteria 3types: Structure, Returnign, Execution
 
