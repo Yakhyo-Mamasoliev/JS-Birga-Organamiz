@@ -8,19 +8,19 @@
 //mostly two ways of of creating: literal and constructor
 //Object via build via literal medthod
 
-// const person = {
-//   //state properties
-//   name: 'David',
-//   age: 22,
-//   country: 'English',
-// };
+const person = {
+  //state properties
+  name: 'David',
+  age: 22,
+  country: 'English',
+};
 
-// //key: name, age, 
-// //value: "David", 22
+//key: name, age, 
+//value: "David", 22
 
-// //CAll
-// //1way 
-// console.log('name of the person: ', person.name);
+//CAll
+//1way 
+console.log('name of the person: ', person.name);
 
 // //2way, creating varibale
 // const a = person.name;
