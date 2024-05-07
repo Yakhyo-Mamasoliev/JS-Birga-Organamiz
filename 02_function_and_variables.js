@@ -8,10 +8,12 @@
 
 // Define
 function greeting() {
-  console.log("Hello World");
+  console.log("Hello Worldddddd.");
 }
 //Call
 greeting();
+console.log("Hello World from Regular Function");
+
 
 //Function Criteria 3types: Structure, Returnign, Execution
 
