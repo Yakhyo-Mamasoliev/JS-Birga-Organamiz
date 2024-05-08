@@ -1,8 +1,9 @@
 // 04_CLASSES(this is a template) bu juda ko`p Objectlarni qisqa kod bilan hosil qilish uchun
 
+
 //naming standards: Camel, Snake, Kebab, Pascal case
 //camel case
-const myName = "John"; //myName, first little m and theb big N
+const myName = "Andrew"; //myName, first little m and theb big N
 
 //snake naming
 let your_name = "Joho";
