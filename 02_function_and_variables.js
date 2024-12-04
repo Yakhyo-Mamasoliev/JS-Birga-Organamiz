@@ -1,93 +1,75 @@
-////////////LESSON-02 FUNCTION VA VARIABLES /////////////////////
-//js environments 3, web, nodejs, mobile application. 
+// LESSON-02: Functions & Variables
+// Define and call functions with different types (regular, expression, arrow, auto-invoke).
+// Covering function return types (returning vs void) and argument/parameter handling.
 
-//function= malum bir vazifa bajarishga asoslangan code block.
-//Function (it consists of 2 things) => Define & Call
-
-// mostly use const not let. 
-
-// Define
 function greeting() {
-  console.log("Hello Worldddddd.");
+  console.log("Hello World");
 }
-//Call
-greeting();
-console.log("Hello World from Regular Function");
+greeting();  // Output: Hello World
 
+// Function Types:
+// 1. Regular Function
+function greeting() {
+  console.log("Hello World from Regular Function");
+}
+greeting();  // Output: Hello World from Regular Function
 
-//Function Criteria 3types: Structure, Returnign, Execution
+// 2. Expression Function (Anonymous)
+const abc = function() {
+  console.log("Hello World from Expression Function");
+};
+abc();  // Output: Hello World from Expression Function
 
-//1. Structure: Regular, Expression, Arrow, Auto Invoke Functions
-// //1.3 Regular Function
-// function greeting() {
-//   console.log("Hello World from Regular Function");
-// }
-// greeting();
+// 3. Arrow Function
+const xyz = () => {
+  console.log('Hello World from Arrow Function');
+};
+xyz();  // Output: Hello World from Arrow Function
 
-//1.2 Expression(Anonym, cos it is most common type) Function 2: Anonymous and Named(Named is used so less often so we dont use it in this course) 
-// const abc = function() {
-//   console.log("Hello World from Expr F");
-// }
-// abc();
+// 4. Auto-Invoke Function
+(function() {
+  console.log('Hello from Auto-Invoke Function');
+})();  // Output: Hello from Auto-Invoke Function
 
-// //3.1 Arrow F
-// const xyz = () => {
-//   console.log('Hello World from Arrow');
-// }
-// xyz();
+// Return vs Void Functions:
+// 1. Returning Function
+function calculate() {
+  const a = 10;
+  const b = 20;
+  return a + b;
+}
+const result = calculate();  // result = 30
 
-// //1.4 Auot Invoke
-// (function(){
-//   console.log('Hello');
-// })
-// ();
+// 2. Void Function (no return)
+function calculate() {
+  const a = 10;
+  const b = 20;
+  console.log("Result:", a + b);  // Output: Result: 30
+}
+let d = calculate();  // d = undefined
+console.log('Void Function:', d);  // Output: Void Function: undefined
 
-//Returnign: return and Void
-// //2.1 Return function()returns the result
-// function calculate(){
-//   const a = 10;
-//   const b = 20;
-//   return  a + b;
-// }
-// const result = calculate();
+// Function Execution: Synchronous vs Asynchronous
+// All above functions are synchronous. Asynchronous functions will be explored later.
 
-// //2.2 Void function() doesnt return the result(cos it doens have return value(or written))
-// function calculate(){
-//   const a = 10;
-//   const b = 20;
-//   console.log("Result: ", a+b)
-// }
-// //here 
-// let d = calculate();
-// console.log('void: ', d);
+// Function Parameters and Arguments:
+// Define a function with parameters:
+function calculate(a, b) {
+  return a + b;
+}
+console.log(calculate(2, 3));  // Output: 5
 
+// Argument priority based on parameter definitions:
+// Case 1: Parameter inside the function
+const a = 50;
+function calculate(a, b) {
+  return a + b;  // Uses 'a' from the function's parameter
+}
+console.log(calculate(2, 3));  // Output: 5
 
-// Execution = Asynchrous, Synchrous function. 
-//all above codes are Synchrous, we will see Asynchrous in future InshaaAlloh!
-
-
-//Function: argument and parametr
-// // Define(parametr)
-// function calculate(a, b){//this is define section, a,b is parametr function
-//   return a+b;
-// }
-// console.log(calculate(2, 3));
-
-// Priority order
-
-// // case 1
-// const a = 50;
-// function calculate(a, b){//always inside of the function is above
-//   return a+b;
-// }
-// console.log(calculate(2, 3));
-
-// //case 2
-// const a = 50;
-// function calculate(b){//if there is no paremtr inside the function then it searches for ourside of function
-//   return b;
-// }
-// console.log(calculate(3));
-
-
-
+// Case 2: No parameter inside the function, uses external variable
+const m = 50;
+function calculate(n) {
+  return n;  // Uses 'n' passed to the function
+}
+console.log(calculate(5));  // Output: 5
