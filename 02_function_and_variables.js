@@ -44,10 +44,11 @@ const result = calculate();  // result = 30
 function calculate() {
   const a = 10;
   const b = 20;
-  console.log("Result:", a + b);  // Output: Result: 30
+  console.log("Result:", a + b);  // Logs result but doesn't return value
 }
-let d = calculate();  // d = undefined
-console.log('Void Function:', d);  // Output: Void Function: undefined
+const d = calculate();  // d becomes undefined
+// The calculate() function does not return a value, so d is assigned undefined. To return a value, add a return statement like return a + b;.
+
 
 // Function Execution: Synchronous vs Asynchronous
 // All above functions are synchronous. Asynchronous functions will be explored later.
